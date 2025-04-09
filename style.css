@@ -20,12 +20,20 @@ body {
 }
 
 /* Стиль для кнопок */
-.color-box, .erase, .fill, .save-tool {
+.color-box, .tool {
     width: 100%;
     aspect-ratio: 1/1;
     border: 1px solid #ccc;
     margin-bottom: 5px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool img {
+    width: 80%;
+    height: 80%;
 }
 
 .container {
