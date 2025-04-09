@@ -72,12 +72,13 @@ document.querySelector('.erase').addEventListener("click", function () {
     })
 })
 
-document.querySelector('.save-tool').addEventListener('click', function() {
-    domtoimage.toPng(field,)
+// Кнопка сохранить
+document.querySelector('.save').addEventListener('click', function() {
+    domtoimage.toPng(field)
     .then(function (dataUrl) {
         let img = new Image();
         img.src = dataUrl;
-        window.saveAs(dataUrl, 'my-node.png')
+        window.saveAs(dataUrl, 'pixel.png')
     })
 })
 
