@@ -20,7 +20,7 @@ body {
 }
 
 /* Стиль для кнопок */
-.color-box, .erase, .fill {
+.color-box, .erase, .fill, .save-tool {
     width: 100%;
     aspect-ratio: 1/1;
     border: 1px solid #ccc;
@@ -44,7 +44,7 @@ body {
     display: grid;
     grid-template-columns: repeat(30, 1fr);
     grid-template-rows: repeat(15, 1fr);
-    gap: .5px;
+    /* gap: .5px; */
 }
 .cell {
     background: rgb(62, 62, 62);
@@ -54,3 +54,4 @@ body {
     background: rgb(62, 62, 62);
     opacity: .5;
 }
+
