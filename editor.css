@@ -1,0 +1,64 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    user-select: none;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.field{
+    width: 90vw;
+    height: 45vw;
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+
+}
+
+.color-box{
+    width: 100%;
+    aspect-ratio: 1/1;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+}
+
+.palette{
+    background-color: rgb(62, 62, 62);
+    width: 2.5vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px ;
+}
+
+.cell{
+    background-color: rgb(62, 62, 62);
+}
+
+.cell:hover{
+    opacity: 0.5;
+}
+
+.tool {
+  width: 100%;
+  aspect-ratio: 1/1;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+}
+.tool img{
+    width: 100%;
+    height: 100%;
+
+}
